@@ -1,0 +1,317 @@
+[
+    {
+      "Food": "idli",
+      "Category": "breakfast",
+      "Quantity": "1 Piece",
+      "Calories": 35,
+      "Carbs": 2.625,
+      "Protein": 1.75,
+      "Fats": 1.555555556
+    },
+    {
+      "Food": "plain dosa",
+      "Category": "breakfast",
+      "Quantity": "1 Piece",
+      "Calories": 80,
+      "Carbs": 12.375,
+      "Protein": 4.125,
+      "Fats": 5.5
+    },
+    {
+      "Food": "poha",
+      "Category": "breakfast",
+      "Quantity": "1 Cup",
+      "Calories": 180,
+      "Carbs": 9,
+      "Protein": 9,
+      "Fats": 8
+    },
+    {
+      "Food": "upma",
+      "Category": "breakfast",
+      "Quantity": "1 cup",
+      "Calories": 190,
+      "Carbs": 9.5,
+      "Protein": 9.5,
+      "Fats": 6.333333333
+    },
+    {
+      "Food": "vada pav",
+      "Category": "breakfast",
+      "Quantity": "1 Piece",
+      "Calories": 120,
+      "Carbs": 14.625,
+      "Protein": 4.875,
+      "Fats": 6.5
+    },
+    {
+      "Food": "pav bhaji",
+      "Category": "breakfast",
+      "Quantity": "1 Plate",
+      "Calories": 330,
+      "Carbs": 20,
+      "Protein": 10,
+      "Fats": 8.888888889
+    },
+    {
+      "Food": "poori",
+      "Category": "breakfast",
+      "Quantity": "1 Piece",
+      "Calories": 60,
+      "Carbs": 5,
+      "Protein": 5,
+      "Fats": 4.444444444
+    },
+    {
+      "Food": "sandwich",
+      "Category": "breakfast",
+      "Quantity": "2 Bread",
+      "Calories": 210,
+      "Carbs": 26.5,
+      "Protein": 6.625,
+      "Fats": 11.77777778
+    },
+    {
+      "Food": "aloo paratha",
+      "Category": "breakfast",
+      "Quantity": "1 Paratha",
+      "Calories": 180,
+      "Carbs": 13.5,
+      "Protein": 9,
+      "Fats": 8
+    },
+    {
+      "Food": "wheat roti",
+      "Category": "breakfast",
+      "Quantity": "1 Roti",
+      "Calories": 80,
+      "Carbs": 20.5,
+      "Protein": 5.125,
+      "Fats": 9.111111111
+    },
+    {
+      "Food": "oats",
+      "Category": "breakfast",
+      "Quantity": "1 Cup",
+      "Calories": 300,
+      "Carbs": 22.5,
+      "Protein": 7.5,
+      "Fats": 6.666666667
+    },
+    {
+      "Food": "egg toast",
+      "Category": "breakfast",
+      "Quantity": "4 Eggs",
+      "Calories": 300,
+      "Carbs": 10,
+      "Protein": 5,
+      "Fats": 6.666666667
+    },
+    {
+      "Food": "pancakes",
+      "Category": "breakfast",
+      "Quantity": "1 Cake",
+      "Calories": 90,
+      "Carbs": 4.5,
+      "Protein": 2.25,
+      "Fats": 4
+    },
+    {
+      "Food": "fruit bowl",
+      "Category": "breakfast",
+      "Quantity": "1 Cup",
+      "Calories": 160,
+      "Carbs": 8,
+      "Protein": 4,
+      "Fats": 7.111111111
+    },
+    {
+      "Food": " curd rice",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 240,
+      "Carbs": 24,
+      "Protein": 12,
+      "Fats": 5.333333333
+    },
+    {
+      "Food": "rice & chicken curry",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 240,
+      "Carbs": 24,
+      "Protein": 6,
+      "Fats": 8
+    },
+    {
+      "Food": "rice &mutton curry",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 225,
+      "Carbs": 22.5,
+      "Protein": 11.25,
+      "Fats": 7.5
+    },
+    {
+      "Food": "vegetable curry",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 330,
+      "Carbs": 24.75,
+      "Protein": 16.5,
+      "Fats": 7.333333333
+    },
+    {
+      "Food": "2 roti & paneer",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 365,
+      "Carbs": 27.375,
+      "Protein": 9.125,
+      "Fats": 16.22222222
+    },
+    {
+      "Food": "chicken tandoori breast",
+      "Category": "lunch",
+      "Quantity": "100 g",
+      "Calories": 260,
+      "Carbs": 19.5,
+      "Protein": 13,
+      "Fats": 5.777777778
+    },
+    {
+      "Food": "rice & daal makhani",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 260,
+      "Carbs": 13,
+      "Protein": 13,
+      "Fats": 11.55555556
+    },
+    {
+      "Food": "rice & rajma masala",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 240,
+      "Carbs": 12,
+      "Protein": 6,
+      "Fats": 5.333333333
+    },
+    {
+      "Food": "2 roti & fish curry",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 230,
+      "Carbs": 23,
+      "Protein": 11.5,
+      "Fats": 5.111111111
+    },
+    {
+      "Food": "Jeera ice & egg curry with 2 eggs",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 280,
+      "Carbs": 21,
+      "Protein": 7,
+      "Fats": 6.222222222
+    },
+    {
+      "Food": "2 bature & channa masala",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 250,
+      "Carbs": 12.5,
+      "Protein": 6.25,
+      "Fats": 5.555555556
+    },
+    {
+      "Food": "2 roti & mushrrom curry",
+      "Category": "lunch",
+      "Quantity": "1 Cup",
+      "Calories": 230,
+      "Carbs": 12,
+      "Protein": 8,
+      "Fats": 3.555555556
+    },
+    {
+      "Food": "2 chapati & Thai chicken curry",
+      "Category": "dinner",
+      "Quantity": "1 Cup",
+      "Calories": 210,
+      "Carbs": 12,
+      "Protein": 3,
+      "Fats": 4
+    },
+    {
+      "Food": "veg pulao",
+      "Category": "dinner",
+      "Quantity": "1 Cup",
+      "Calories": 250,
+      "Carbs": 25,
+      "Protein": 6.25,
+      "Fats": 11.11111111
+    },
+    {
+      "Food": "2 roti & bhindi masala",
+      "Category": "dinner",
+      "Quantity": "1 Cup",
+      "Calories": 250,
+      "Carbs": 12.5,
+      "Protein": 6.25,
+      "Fats": 5.555555556
+    },
+    {
+      "Food": "2 roti & veg kurma",
+      "Category": "dinner",
+      "Quantity": "1 Cup",
+      "Calories": 300,
+      "Carbs": 15,
+      "Protein": 15,
+      "Fats": 10
+    },
+    {
+      "Food": "curd rice",
+      "Category": "dinner",
+      "Quantity": "1 Cup",
+      "Calories": 300,
+      "Carbs": 30,
+      "Protein": 7.5,
+      "Fats": 6.666666667
+    },
+    {
+      "Food": "chicken sandwich",
+      "Category": "dinner",
+      "Quantity": "1 Piece",
+      "Calories": 260,
+      "Carbs": 13,
+      "Protein": 6.5,
+      "Fats": 8.666666667
+    },
+    {
+      "Food": "veg sandwich",
+      "Category": "dinner",
+      "Quantity": "1 Piece",
+      "Calories": 265,
+      "Carbs": 19.875,
+      "Protein": 6.625,
+      "Fats": 8.833333333
+    },
+    {
+      "Food": "jeera rice",
+      "Category": "dinner",
+      "Quantity": "1 Cup",
+      "Calories": 250,
+      "Carbs": 12.5,
+      "Protein": 12.5,
+      "Fats": 11.11111111
+    },
+    {
+      "Food": "oatmeal",
+      "Category": "dinner",
+      "Quantity": "1 Cup",
+      "Calories": 280,
+      "Carbs": 21,
+      "Protein": 7,
+      "Fats": 9.333333333
+    }
+   ]
