@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "b5f174b4-4c30-416b-98f5-04b20bef9f7d",
+		"name": "Diet Suggest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Authentication",
+			"item": [
+				{
+					"name": "user login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"pratikparate707@gmail.com\",\r\n    \"password\" : \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dietsuggest-app.herokuapp.com/api/user/login",
+							"protocol": "https",
+							"host": [
+								"dietsuggest-app",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Pratik Parate\",\r\n    \"email\" : \"pratikparate707@gmail.com\",\r\n    \"password\" : \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authToken",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFmMzk3MjFjMTJiNmI0ZjliNWQxY2RlIn0sImlhdCI6MTY0MzUxNzgxMH0.qOxmLh7TgnT_k_rpQavzeVQHSnuHmF9gD_wVrpyxMRw",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/user/getUser/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFmNzRlODNmN2U5ZTM1ZGUzNTZjNjhlIn0sImlhdCI6MTY0MzU5NzQ0N30.0OqffWOvD89roSvuD1bxr3HpQMNDhhxAxF3KyX4-v4w",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"user",
+								"getUser",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFmNzRlODNmN2U5ZTM1ZGUzNTZjNjhlIn0sImlhdCI6MTY0MzU5NzQ0N30.0OqffWOvD89roSvuD1bxr3HpQMNDhhxAxF3KyX4-v4w"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Google Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idToken\" : \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjllYWEwMjZmNjM1MTU3ZGZhZDUzMmU0MTgzYTZiODIzZDc1MmFkMWQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTAxNjA4NjM4NzE0LWszdjZjOW5zcHY1b3FycDl1bjZ0bTQ0dnNiOG41MXZkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTAxNjA4NjM4NzE0LWszdjZjOW5zcHY1b3FycDl1bjZ0bTQ0dnNiOG41MXZkLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2MTQ2MzAwMjg2NjU1MDIxNDk4IiwiZW1haWwiOiJwYXJhdGVtYXlhMTIzQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiZklzb1hmbERxSzNjM3VoRlJ5VXNjdyIsIm5hbWUiOiJNYXlhIFBhcmF0ZSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQVRYQUp6S3FGcjJjN1B2N3pDQklZYjRlekhWMjRaOHZ1UFpXWmZWTHBvWT1zOTYtYyIsImdpdmVuX25hbWUiOiJNYXlhIiwiZmFtaWx5X25hbWUiOiJQYXJhdGUiLCJsb2NhbGUiOiJlbi1HQiIsImlhdCI6MTY0MzM1MTMzNiwiZXhwIjoxNjQzMzU0OTM2LCJqdGkiOiIwYzA5NmQ2Y2Q2ZDllMDAwMTcyZjFlOTNiMWRlMTU0MDVjOGNmMjcxIn0.e8_1ge4Yb29dKgDt_t8zrDa5WYmEQaGZoJDAU2YMS80MFoP8qkwwUtITZSXDtSzDjRLqITmKqUFIgucmmzSAeSfxsTSqfBCQDZYVaYnAH4UA6mxz_z5XpReWIeNbq9uELDRZd73MAZATyk9rkrHFlLSYT03c7JFVm4z7XlmEFwYsnRvoedURXydaOgebbkIw6Aq9ZoLlp0PzaZB4K04q-Bi4a-3Oh2b6oxbPEyfadrwCGYIlVDII4nkI-JVHFpfgVbFWhNQMWRFZh5LNAcJoAD5n6zlqL0qIw9E2gjuFscwmQHi1RYRKHyMsZTha-9EEesvD0cFqpoPIHwdR9dnUUg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/user/googleLogin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"user",
+								"googleLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm Email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\": \"pratikparate707@gmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/user/confirmEmail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"user",
+								"confirmEmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"pratikparate707@gmail.com\",\r\n    \"oldPassword\":\"12345\",\r\n    \"newPassword\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/user/changePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gender\": \"Male\",\r\n    \"age\": \"18\",\r\n    \"height\": \"172\",\r\n    \"weight\": \"72\",\r\n    \"activity_type\": \"Daily Exercise\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/user/updateDetails/61f74e83f7e9e35de356c68e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"user",
+								"updateDetails",
+								"61f74e83f7e9e35de356c68e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Diet",
+			"item": [
+				{
+					"name": "Insert all food items",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Diet for User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/diet/createDiet/61f39721c12b6b4f9b5d1cde",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"diet",
+								"createDiet",
+								"61f39721c12b6b4f9b5d1cde"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update diet for a user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/diet/updateDiet/61f74e83f7e9e35de356c68e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"diet",
+								"updateDiet",
+								"61f74e83f7e9e35de356c68e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Diet details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/diet/getDiet/61f74e83f7e9e35de356c68e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"diet",
+								"getDiet",
+								"61f74e83f7e9e35de356c68e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
