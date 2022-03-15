@@ -26,6 +26,7 @@ var container = {
                     var quantity = obj["Quantity"].split(" ");
                     quantity[0] = parseInt(quantity[0]) * multiple;
                     obj["Quantity"] = quantity.join(" ");
+                    // console.log(obj)
                     return obj;
                 case "lunch":
                     var multiple = Math.floor(lunchCal / kCal);
@@ -36,6 +37,7 @@ var container = {
                     var quantity = obj["Quantity"].split(" ");
                     quantity[0] = parseInt(quantity[0]) * multiple;
                     obj["Quantity"] = quantity.join(" ");
+                    // console.log(obj)
                     return obj;
                 case "dinner":
                     var multiple = Math.floor(dinnerCal / kCal);
@@ -46,6 +48,7 @@ var container = {
                     var quantity = obj["Quantity"].split(" ");
                     quantity[0] = parseInt(quantity[0]) * multiple;
                     obj["Quantity"] = quantity.join(" ");
+                    // console.log(obj)
                     return obj;
             }
         })

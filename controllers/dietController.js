@@ -7,11 +7,14 @@ var Diet = require('../models/Diet')
 
 exports.createDietController = async (req, res) => {
     const id = req.params.id;
+    console.log(id);
     try {
         let user = await User.findById(id);
         if (!user) {
             responseHelper.error(res, "No such user exists");
         }
+        console.log(user);
+        await Diet.findOneAndDelete({"user._id" : id})
         let height = user["height"] / 100;
         console.log("height : " + height)
         let weight = user["weight"];
@@ -42,6 +45,7 @@ exports.createDietController = async (req, res) => {
             bmi_data,
             "created_date": new Date()
         })
+        diet.save();
         if (diet) {
             responseHelper.success(res, diet);
         }
@@ -111,7 +115,9 @@ exports.updateDietController = async (req, res) => {
 
 exports.getDietController= async (req, res) => {
     const id = req.params.id;
-    const diet = await Diet.findOneAndUpdate({"user._id" : id});
+    console.log(id)
+    const diet = await Diet.find({"user._id" : id});
+    console.log(diet)
     if(diet){
         responseHelper.success(res, diet);
     } else {
