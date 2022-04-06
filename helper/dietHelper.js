@@ -3,13 +3,16 @@ var activityQuotients = require('../const/activityTypeQuotient')
 
 var calculateIdealWeight = function(user) {
     var height = user["height"] / 100;
+    // console.log("1")
     var weight = user["weight"];
+    // console.log("2")
     var bmi = bmiCalculator.calculateBMI(height, weight);
+    // console.log("3")
     switch(user.gender){
         case "Male":
             return (0.5 * bmi +11.5) * height * height;
         case "Female":
-            return (0.4 * bmi + 0.03 * age + 11) * height * height;
+            return (0.4 * bmi + 0.03 * user.age + 11) * height * height;
     }
 }
 
@@ -21,7 +24,8 @@ var calculateIdealkCalRequirementPerDay = function (user) {
         case "Male":
             return ( 66.67 + ( 13.75 * idealWeight ) + ( 5 * height ) - 6.76 * age ) * activityQuotients[user["activity_type"]];
         case "Female":
-            return ( 665.1 + (9.56 * idealWeight ) + ( 1.85 * cm ) - ( 4.68 * age )) * activityQuotients[user["activity_type"]];
+            // console.log("In Female")
+            return ( 665.1 + (9.56 * idealWeight ) + ( 1.85 * height ) - ( 4.68 * age )) * activityQuotients[user["activity_type"]];
     }
 }
 
@@ -33,7 +37,7 @@ var calculateCurrentkCalRequirementPerDay = function(user) {
         case "Male" : 
             return ( 66.67 + ( 13.75 * weight ) + ( 5*height ) - 6.76 * age ) * activityQuotients[user["activity_type"]];
         case "Female" : 
-            console.log("In Female")
+            // console.log("In Female")
             return ( 665.1 + ( 9.56 * weight ) + ( 1.85 * height ) - ( 4.68 * age )) * activityQuotients[user["activity_type"]];
     }
 }

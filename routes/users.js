@@ -1,10 +1,7 @@
 var express = require('express');
 var router = express.Router()
-
-
-
 var {registerController, loginController, getUserController, googleLoginController, confirmEmailController, changePasswordController, updateDetailsController} = require('../controllers/auth.controller.js')
-
+var {updateDietController} = require('../controllers/dietController');
 
 //Route 1 --- Register a User
 router.post('/register', registerController)
@@ -25,6 +22,6 @@ router.post('/confirmEmail', confirmEmailController);
 router.post('/changePassword', changePasswordController);
 
 //Route 7 --- Update Details
-router.post('/updateDetails/:id', updateDetailsController)
+router.post('/updateDetails/:id', updateDetailsController, updateDietController)
 
 module.exports = router;
