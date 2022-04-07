@@ -25,7 +25,7 @@ var calculateIdealkCalRequirementPerDay = function (user) {
             return ( 66.67 + ( 13.75 * idealWeight ) + ( 5 * height ) - 6.76 * age ) * activityQuotients[user["activity_type"]];
         case "Female":
             // console.log("In Female")
-            return ( 665.1 + (9.56 * idealWeight ) + ( 1.85 * height ) - ( 4.68 * age )) * activityQuotients[user["activity_type"]];
+            return ( 66.51 + (9.56 * idealWeight ) + ( 1.85 * height ) - ( 4.68 * age )) * activityQuotients[user["activity_type"]];
     }
 }
 
@@ -38,7 +38,7 @@ var calculateCurrentkCalRequirementPerDay = function(user) {
             return ( 66.67 + ( 13.75 * weight ) + ( 5*height ) - 6.76 * age ) * activityQuotients[user["activity_type"]];
         case "Female" : 
             // console.log("In Female")
-            return ( 665.1 + ( 9.56 * weight ) + ( 1.85 * height ) - ( 4.68 * age )) * activityQuotients[user["activity_type"]];
+            return ( 66.51 + ( 9.56 * weight ) + ( 1.85 * height ) - ( 4.68 * age )) * activityQuotients[user["activity_type"]];
     }
 }
 
