@@ -13,9 +13,9 @@ var container = {
         console.log("dinnerCal : " + dinnerCal)
         var set = food.map(function (obj) {
             var kCal = parseFloat(obj["Calories"]);
-            var carbs = parseFloat(obj["Carbs"])
-            var protein = parseFloat(obj["Protein"])
-            var fats = parseFloat(obj["Fats"])
+            var carbs = parseFloat(obj["Carbs"]).toFixed(2);
+            var protein = parseFloat(obj["Protein"]).toFixed(2);
+            var fats = parseFloat(obj["Fats"]).toFixed(2);
             switch (obj["Category"]) {
                 case "breakfast":
                     var multiple = Math.floor(breakFastCal / kCal);
